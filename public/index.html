@@ -6,6 +6,7 @@
     <meta viewport="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet" type="text/css">
     <link href="/vendor/pure/pure-min.css" rel="stylesheet">
+    <link href="/vendor/awesomplete/awesomplete.css" rel="stylesheet">
     <link href="/styles/index.css" rel="stylesheet">
   </head>
   <body>
@@ -17,8 +18,8 @@
         <div class="pure-u-7-24">
           <div class="search-form">
             <form class="pure-form">
-              <input type="text" name="txtSearch" id="txtSearch"> 
-              <button class="pure-button" type="button" id="btnSearch">Buscar</button>
+              <input class="awesomplete" type="text" name="txtSearch" id="txtSearch" data-list=""> 
+              <button class="pure-button pure-button-disabled" type="button" id="btnSearch">Buscar</button>
             </form>
           </div>
         </div>
@@ -34,6 +35,7 @@
     </div>
     <script src="/vendor/jquery/dist/jquery.min.js"></script>
     <script src="/vendor/underscore/underscore-min.js"></script>
+    <script src="/vendor/awesomplete/awesomplete.min.js"></script>
     <script src="/scripts/global.js"></script>
     <script src="/scripts/filter.js"></script>
     <script src="/scripts/search-form.js"></script>
